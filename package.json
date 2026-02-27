@@ -1,0 +1,1 @@
+{\n  "name": "admin-panel",\n  "version": "1.0.0",\n  "dependencies": {\n    "react": ">=17.0.0",\n    "firebase": ">=9.0.0",\n    "socket.io-client": ">=4.0.0",\n    "axios": ">=0.21.0"\n  }\n}
