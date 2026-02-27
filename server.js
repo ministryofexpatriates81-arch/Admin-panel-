@@ -4,16 +4,32 @@ const admin = require('firebase-admin');
 const { Telegraf } = require('telegraf');
 
 // Initialize Firebase Admin SDK
-const serviceAccount = require('./path/to/your/serviceAccountKey.json'); // Replace with your service account JSON file
+const serviceAccount = require('// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyD1hI53zJb8jFCINxIl2gzpO2T0wlYjyZM",
+  authDomain: "my-real-time-calling-app.firebaseapp.com",
+  projectId: "my-real-time-calling-app",
+  storageBucket: "my-real-time-calling-app.firebasestorage.app",
+  messagingSenderId: "247275324084",
+  appId: "1:247275324084:web:baaac6efd0dd0b3d0d0de1"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig'); // Replace with your service account JSON file
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
-  databaseURL: "https://<your-database-name>.firebaseio.com" // Replace with your database URL
+  databaseURL: "https://my-real-time-calling-app-default-rtdb.firebaseio.com" // Replace with your database URL
 });
 
 const db = admin.database();
 const app = express();
-const bot = new Telegraf('<YOUR_TELEGRAM_BOT_TOKEN>'); // Replace with your Telegram Bot Token
+const bot = new Telegraf('8367516207:AAG6uKkLQffJyGkBPPJCU6YUilh-qcaUhfU'); // Replace with your Telegram Bot Token
 
 app.use(bodyParser.json());
 
