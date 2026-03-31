@@ -15,7 +15,7 @@ admin.initializeApp({
 const db = admin.database();
 
 const app = express();
-const bot = new Telegraf('8367516207:AAG6uKkLQffJyGkBPPJCU6YUilh-qcaUhfU'); 
+const bot = new Telegraf('8226802389:AAFihtrakoCrSJ2uXTRTDSTaXoTlqz7loA4'); 
 // এখানে তোমার আসল বট টোকেন বসাবে
 
 app.use(bodyParser.json());
